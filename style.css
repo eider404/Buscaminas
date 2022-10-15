@@ -1,0 +1,62 @@
+body{
+    background-color: #f3f3f3;
+    text-align: center;
+}
+button{
+    
+    border: none;
+    color: white;
+    padding: 0px 0px 5px 0px;
+    width: 65px;
+    height: 51px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 2px 2px 2px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    
+    background-color: #4CAF50; /* Green 4CAF50*/           
+}
+#capa{
+    text-align: center;
+    
+}
+
+/**/
+
+
+ul {
+    list-style-type: none;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    margin-left: 30%;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    
+}
+
+li {
+    width: 50%;
+    float:left;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}

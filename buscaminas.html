@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Documento con una Capa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="DOM.js"></script>
+</head>
+<body style="background-color:rgb(66, 66, 66); text-align: center;">
+<!---navegacion-->
+<div >
+    <ul>
+        <li><a onclick="window.location.reload()">Reiniciar</a></li>
+        <li><a onclick="reglas()">Reglas</a></li>
+    </ul>
+</div>
+
+
+
+<!---donde se incertan los button-->
+<div id="capa"></div>
+
+
+<!---Nota de game over-->
+<h1 id="gameOver" ></h1>
+
+<div id="divRegla">
+    <h3 id="reglas"></h3>
+    <h3 id="reglas2"></h3>
+    <h3 id="reglas3"></h3>
+</div>
+
+
+    <script>
+        Logica();
+
+        function reglas(){
+            document.getElementById("reglas").innerHTML ="El juego consiste en despejar todas las casillas de una pantalla que no oculten una mina.";
+            document.getElementById("reglas2").innerHTML ="Algunas casillas tienen un número, el cual indica la cantidad de minas que hay en las casillas circundantes. Así, si una casilla tiene el número 3, significa que de las ocho casillas que hay alrededor (si no es en una esquina o borde) hay 3 con minas y 5 sin minas. Si se descubre una casilla sin número indica que ninguna de las casillas vecinas tiene mina y éstas se descubren automáticamente.";
+            document.getElementById("reglas3").innerHTML ="Si se descubre una casilla con una mina se pierde la partida.";
+            document.getElementById("divRegla").style.backgroundColor = "#D1690D";
+        }
+
+    </script>
+
+</body>
+</html>
+
