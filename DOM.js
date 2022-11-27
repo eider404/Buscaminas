@@ -1,6 +1,6 @@
 function Logica(){
-     
-let dificultad= "medio";
+    
+let dificultad= document.querySelector( '#form_dif').dificultad.value;
 var tablero = [];
 let facil = [[],[],[],[],[],[]];
 let medio = [[],[],[],[],[],[],[]];
