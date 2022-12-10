@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <title>Buscaminas</title>
   <link rel="stylesheet" href="style.css">
-  <script src="DOM.js"></script>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #005346; text-align: center;">
+<body>
 <!---navegacion-->
 <div>
     <ul>
@@ -15,12 +18,22 @@
     </ul>
 </div>
 <br>
+
+<div id="divRegla">
+    <p id="regla1"></p>
+    <p id="regla2"></p>
+    <p id="regla3"></p>
+</div>
+
+<br>
+
 <form id="form_dif" class="table">
     <select name="dificultad" id="dificultad" class="classic">
         <option value="facil">Facil</option>
         <option value="medio">Medio</option>
         <option value="dificil">Dificil</option>
     </select>
+    <p class="dificultad"> -> </p>
     <input type="button" value="Seleccionar" class="dificultad" style="background-color: rgb(222, 144, 1);" onclick="Clear() ,Logica()">
 </form>
 
@@ -31,14 +44,10 @@
 
 
 <!---Nota de game over-->
-<h1 id="gameOver" ></h1>
+<h1 id="mensage" class="mensage"></h1>
 
 
-<div id="divRegla">
-    <p id="regla1"></p>
-    <p id="regla2"></p>
-    <p id="regla3"></p>
-</div>
+
 
 
     <script>
@@ -50,7 +59,7 @@
 
         function reglas(){
             document.getElementById("regla1").innerHTML ="El juego consiste en despejar todas las casillas de la pantalla que no oculten una mina.";
-            document.getElementById("regla2").innerHTML ="Algunas casillas tienen un número, el cual indica la cantidad de minas que hay en las casillas circundantes. Así, si una casilla tiene el número 3, significa que de las ocho casillas que hay alrededor (si no es en una esquina o borde) hay 3 con minas y 5 sin minas. Si se descubre una casilla sin número indica que ninguna de las casillas vecinas tiene mina y éstas se descubren automáticamente.";
+            document.getElementById("regla2").innerHTML ="Algunas casillas tienen un número, el cual indica la cantidad de minas que hay en las casillas circundantes. Ejemplo, si una casilla tiene el número 3, significa que de las ocho casillas que hay alrededor (si no es en una esquina o borde) hay 3 con minas y 5 sin minas. Si se descubre una casilla con un '0'  indica que ninguna de las casillas vecinas tiene mina.";
             document.getElementById("regla3").innerHTML ="Si se descubre una casilla con una mina se pierde la partida.";
             document.getElementById("divRegla").className = "reglas"
         }

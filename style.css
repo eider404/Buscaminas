@@ -1,19 +1,22 @@
 body{
-    background-color: #f3f3f3;
+    background-color: #005346; 
     text-align: center;
+    font-family: Press Start 2P;
+    font-family: 'Press Start 2P', cursive;
 }
+
 button{
     
     border: none;
     color: white;
-    padding: 0px 0px 5px 0px;
+    padding: 0px 0px 14px 0px;
     width: 65px;
     height: 51px;
     
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 40px;
     margin: 2px 2px 2px 2px;
     cursor: pointer;
     border-radius: 12px;
@@ -66,9 +69,9 @@ li a:hover:not(.active) {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    padding: 10px 0px 10px 0px;
 }
 
 .table{
@@ -87,24 +90,34 @@ select {
     display: inline-block;
     font: inherit;
     line-height: 1.5em;
-    padding: 0.5em 3.5em 0.5em 1em;  
+    padding: 0.5em 0.5em 0.5em 2em;  
     margin: 10px 0px 20px 0px;      
+    box-sizing: border-box;
+    height: 45px;
+}
+
+option{
+    padding: 30px 30px 30px 30px;
+}
+
+
+
+.dificultad{
+    
+    font-size: 14px;
+    
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+      
+    margin: 0;      
     box-sizing: border-box;
     height: 45px;
     
 }
 
-.dificultad{
-    
-    border: thin solid #184720;
-    border-radius: 4px;
-    display: inline-block;
-    font: inherit;
-    line-height: 1.5em;
-    padding: 0.5em 3.5em 0.5em 1em;  
-    margin: 0;      
-    box-sizing: border-box;
-    height: 45px;
+.mensage{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
   
