@@ -1,18 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function generarTablero(){
 
     let capa = document.querySelector("#capa")
