@@ -26,6 +26,9 @@ button{
 
 #capa{
     text-align: center;
+    min-width: 700px;
+    max-width: 700px;
+    margin: auto;
 }
 
 /**/
@@ -33,14 +36,13 @@ button{
 
 ul {
     list-style-type: none;
-    width: 40%;
-    margin: 0;
+    min-width: 500px;
+    max-width: 500px;
     padding: 0;
-    margin-left: 30%;
+    margin: auto;
     overflow: hidden;
     background-color: #287134;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 li {
@@ -77,8 +79,9 @@ li a:hover:not(.active) {
 .table{
     background-color: #005e50;
     border: thin solid #013d34;
-    width: 50%;
-    margin-left: 25%;
+    min-width: 500px;
+    max-width: 500px;
+    margin: auto;
     height: 65px;
     border-radius: 10px;
 }
